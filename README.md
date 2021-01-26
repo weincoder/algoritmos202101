@@ -1,1 +1,1 @@
-# algoritmos202101
+# Curso Algoritmos y bases de datos
