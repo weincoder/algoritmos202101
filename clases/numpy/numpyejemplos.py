@@ -11,7 +11,7 @@ print (listaN[:101])
 
 print(listaNu)
 print(listaNu[::2])
-listaNu[::2]= 200
+listaNu[::2]+= 200
 print (listaNu)
 
 #indexacion lógica
@@ -70,3 +70,24 @@ print (np.sum(indKids))
 print ('#'*30)
 print (np.mean(childrenMoms[1][indKids]))
 print (len(childrenMoms[1][indKids]))
+#ordenando listas
+listaEdades = [12,234,54,6,123,54]
+#listaEdades.sort()
+print (listaEdades)
+listaEdadesNp = np.array(listaEdades)
+listaEdadesNpOrd = np.sort(listaEdadesNp)
+print (listaEdadesNpOrd)
+print ('el que tiene mas años es ...',max(listaEdades))
+print ('el que tiene menos años es ...',min(listaEdades))
+
+#----MAyor y minimo
+print ('el que tiene mas años es ...',np.max(listaEdadesNp))
+print ('el que tiene menos años es ...',np.min(listaEdadesNp))
+#----mayor a 200 
+mayoresADoce = listaEdadesNp > 12
+print (listaEdadesNp[mayoresADoce])
+mayoresAOcho = np.where(listaEdadesNp>8)
+print (mayoresADoce)
+print(mayoresAOcho[0])
+print(listaEdades)
+print(listaEdadesNp[mayoresAOcho[0]])
